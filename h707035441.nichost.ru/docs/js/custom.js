@@ -190,5 +190,48 @@ jQuery(function($){
 	$('#accordion .panel-collapse').on('hidden.bs.collapse', function () {
 	$(this).prev().find(".fa").removeClass("fa-minus").addClass("fa-plus");
 	});
+  
+  
+  /* ----------------------------------------------------------- */
+	/*  11. Delete header nav menu flicker
+	/* ----------------------------------------------------------- */  
+
+/* 	let navbar = document.body.querySelector('#navbar');
+  let aboutClinicHead = document.body.querySelector('#about-clinic-head');
+  let aboutClinicList = document.body.querySelector('#about-clinic-list');
+  
+  let tab = new KeyboardEvent('keydown', {keyCode: 9});
+  
+  aboutClinicHead.addEventListener('mouseleave', (event) => {
+    if (event.relatedTarget !== aboutClinicList) {
+      setTimeout(() => {
+        document.body.dispatchEvent(tab);
+        console.log('nav leave')
+      }, 50);
+    }
+  });
+  
+  aboutClinicList.addEventListener('mouseleave', (event) => {
+    if (event.relatedTarget !== aboutClinicHead) {
+      setTimeout(() => {
+        document.body.dispatchEvent(tab);
+        console.log('list leave')
+      }, 50);
+    }
+  }); */
+  
+  /* ----------------------------------------------------------- */
+	/*  12. fix horizontal orientation of mobile devices
+	/* ----------------------------------------------------------- */  
+
+	if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i))
+                                && (screen.width > screen.height)) {
+    let lis = document.body.querySelectorAll('#navbar li');
+    for (let li of lis) {
+      li.style.height = '45px';
+    }
+   // navbar.style.height = '346px';
+  }
+
 	
 });
