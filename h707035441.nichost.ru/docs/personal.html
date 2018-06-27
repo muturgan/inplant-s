@@ -253,6 +253,7 @@
                           title="Поделиться"
                           onclick="setTimeout(() => {
                                     let downloadLink = document.body.querySelector('[download]');
+                                    downloadLink.style.zIndex = 10;
                                     let path = downloadLink.getAttribute('href');
                                     let a = document.createElement('a');
                                     a.setAttribute('download', '');
