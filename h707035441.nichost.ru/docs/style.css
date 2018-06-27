@@ -174,6 +174,9 @@ img{
 	display: inline;
 	width: 100%;
 }
+#about-clinic-list {
+  z-index: 10;
+}
 .menu_area{
 	float: left;
 	display: inline;
@@ -2803,6 +2806,30 @@ a.gallery-iteam:hover .image-effect::before {
 .slider-text {padding: 10px 5px;top: 10%;}
 .slider-text h2 {font-size: 35px;line-height: 40px;}
 .slider-text p {font-size: 20px;}
+
+.navbar-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-wrapper-one {
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.flex-wrapper-two {
+  flex-basis: 80%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
 }
 
 @media(max-width:480px ){	
