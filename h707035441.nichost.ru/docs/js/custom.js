@@ -230,8 +230,8 @@ jQuery(function($){
     for (let li of lis) {
       li.style.height = '45px';
     }
-   // navbar.style.height = '346px';
   }
+
 
 	
 });
