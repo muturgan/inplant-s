@@ -1,0 +1,21 @@
+{
+  "name": "inplant-s",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muturgan/inplant-s.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muturgan/inplant-s/issues"
+  },
+  "homepage": "https://github.com/muturgan/inplant-s#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

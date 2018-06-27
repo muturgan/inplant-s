@@ -78,12 +78,21 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="index.html">Главная</a></li>
-                <li class="dropdown open">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">О клинике <span class="fa fa-angle-down"></span></a>
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown open active">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="true"
+                      > О клинике
+                      <span class="fa fa-angle-down"></span>
+                  </a>
+                  
                   <ul class="dropdown-menu" role="menu" style="display: none;">
                     <li><a href="about-us.html">О нас</a></li>
-                    <li><a href="personal.html">Персонал</a></li>
+                    <li class="active"><a href="personal.html">Персонал</a></li>
                     <li><a href="gallery.html">Галерея</a></li>
                     <li><a href="vacancies.html">Вакансии</a></li>
                   </ul>
@@ -172,11 +181,11 @@
                 <div class="line"></div>
               </div>
               <ul class="footer-service">
-                <li><a href="/features.html"><span class="fa fa-check"></span>Ортодонтия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Терапия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Гигиена, профилактика, отбеливание</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Хирургия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Ортопедия</a></li>
+                <li><a href="/features.html#orthodontics"><span class="fa fa-check"></span>Ортодонтия</a></li>
+                <li><a href="/features.html#therapy"><span class="fa fa-check"></span>Терапия</a></li>
+                <li><a href="/features.html#hygiene"><span class="fa fa-check"></span>Гигиена, профилактика, отбеливание</a></li>
+                <li><a href="/features.html#surgery"><span class="fa fa-check"></span>Хирургия</a></li>
+                <li><a href="/features.html#orthopedics"><span class="fa fa-check"></span>Ортопедия</a></li>
               </ul>
               </div>
             </div>
@@ -215,7 +224,7 @@
           <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="footer-copyright">
-              <p>&copy; Имплант-С 2017</p>
+              <p>&copy; Имплант-С 2018</p>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -251,6 +260,9 @@
 
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
+    
+    <!-- window scroll throttling -->
+    <script src="js/scroll-throttle.js"></script>
      
   </body>
 </html>

@@ -135,14 +135,14 @@ jQuery(function($){
 	$('.testimonial-nav').slick({
 	  dots: true,
       infinite: true,      
-      speed: 800,
+      speed: 200,
       arrows:false,      
       slidesToShow: 1,
       slide: 'li',
       autoplay: true,
       fade: true,
       autoplaySpeed: 5000,
-      cssEase: 'linear'
+      cssEase: 'linear',
 	});
 
 	/* ----------------------------------------------------------- */
@@ -189,6 +189,6 @@ jQuery(function($){
 	
 	$('#accordion .panel-collapse').on('hidden.bs.collapse', function () {
 	$(this).prev().find(".fa").removeClass("fa-minus").addClass("fa-plus");
-	});	
+	});
 	
 });

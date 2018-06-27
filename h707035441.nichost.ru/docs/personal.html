@@ -83,7 +83,16 @@
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
                 <li><a href="index.html">Главная</a></li>
                 <li class="dropdown open active">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">О клинике <span class="fa fa-angle-down"></span></a>
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="true"
+                      > О клинике
+                      <span class="fa fa-angle-down"></span>
+                  </a>
+                  
                   <ul class="dropdown-menu" role="menu" style="display: none;">
                     <li><a href="about-us.html">О нас</a></li>
                     <li class="active"><a href="personal.html">Персонал</a></li>
@@ -124,10 +133,13 @@
       </div>      
     </section>
 
-<section id="meetDoctors"  id="doctor2">
+<section id="meetDoctors">
       <div class="container">
 <div class="blog-content blog-details">
 
+
+<div id="doctor3"></div>
+<br><br><br>
 
 <img src="/img/new/sandro.jpg" height="400" style="float: left; padding-right: 15px;">
 
@@ -230,13 +242,26 @@
 
                         <div class="pswp__counter"></div>
 
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--close" title="Закрыть (Esc)"></button>
 
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button
+                          class="pswp__button pswp__button--share"
+                          title="Поделиться"
+                          onclick="setTimeout(() => {
+                                    let downloadLink = document.body.querySelector('[download]');
+                                    let path = downloadLink.getAttribute('href');
+                                    let a = document.createElement('a');
+                                    a.setAttribute('download', '');
+                                    a.setAttribute('href', path);
+                                    downloadLink.addEventListener('click', (event) => {
+                                      a.click();
+                                    });
+                                  }, 1)"
+                        ></button>
 
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--fs" title="Развернуть на весь экран"></button>
 
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Масштабировать"></button>
 
                         <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
                         <!-- element will get class pswp__preloader--active when preloader is running -->
@@ -288,9 +313,9 @@
 <p>В период с 2006 года по 2013 год был преподавателем
 кафедры анатомии в Санкт – Петербургском Медицинском Университете им. академика И.П. Павлова</p>
 
+<div id="doctor2"></div>
+<br><br><br>
 
-<br><br>
-    
 <img src="/img/new/melikova.jpg" height="400" style="float: left; padding-right: 15px;">
 
 <div>
@@ -441,6 +466,7 @@
 <li>-создание высокопрофессиональной команды специалистов для решения самых сложных задач и координация деятельности сотрудников.</li>
 </ul>
 
+<div  id="doctor5"></div>
 <br><br><br>
 
 <div style="float: left; padding-right: 15px;">
@@ -500,6 +526,7 @@
 
 </p>
 
+<div  id="doctor4"></div>
 <br><br><br>
 
 <div style="float: left; padding-right: 15px;">
@@ -527,6 +554,7 @@
 </p>
 
 
+<div  id="assistents"></div>
 <br><br><br>
 
 <div style="float: left; padding-right: 15px;">
@@ -546,6 +574,26 @@
 Наша молодая смена в лице ассистентов врачей стоматологов является хорошими помощниками в работе.<br>
 Их заботливое отношение к пациентам помогает им преодолеть боязнь перед стоматологическим креслом.<br>
 Ассистенты Ирина и Ангелина будущие врачи стоматологи.
+</p>
+
+
+
+<div  id="admin"></div>
+<br><br><br>
+
+<div style="float: left; padding-right: 15px;">
+<img src="/img/new/admin.jpg" height="400">
+</div>
+
+<div>
+<h2 style="font-size: 32px;">Ольга<br>Николаевна</h2>    
+<p>Администратор</p>
+</div>
+
+<br clear="all">
+
+<p>
+
 </p>
 
 
@@ -579,11 +627,11 @@
                 <div class="line"></div>
               </div>
               <ul class="footer-service">
-                <li><a href="/features.html"><span class="fa fa-check"></span>Ортодонтия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Терапия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Гигиена, профилактика, отбеливание</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Хирургия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Ортопедия</a></li>
+                <li><a href="/features.html#orthodontics"><span class="fa fa-check"></span>Ортодонтия</a></li>
+                <li><a href="/features.html#therapy"><span class="fa fa-check"></span>Терапия</a></li>
+                <li><a href="/features.html#hygiene"><span class="fa fa-check"></span>Гигиена, профилактика, отбеливание</a></li>
+                <li><a href="/features.html#surgery"><span class="fa fa-check"></span>Хирургия</a></li>
+                <li><a href="/features.html#orthopedics"><span class="fa fa-check"></span>Ортопедия</a></li>
               </ul>
               </div>
             </div>
@@ -622,7 +670,7 @@
           <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="footer-copyright">
-               <p>&copy; Имплант-С 2017</p>
+               <p>&copy; Имплант-С 2018</p>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -658,6 +706,9 @@
 
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
+    
+    <!-- window scroll throttling -->
+    <script src="js/scroll-throttle.js"></script>
      
   </body>
 </html>

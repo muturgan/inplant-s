@@ -1,0 +1,6 @@
+
+.personal-slider-image:hover {
+  z-index: -1;
+  position: relative;
+  top: 100px;
+}

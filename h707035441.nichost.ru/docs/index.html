@@ -30,6 +30,9 @@
 
     <!-- Main structure css file -->
     <link href="style.css" rel="stylesheet">
+    
+    <!-- names don't cover doctors' faces -->
+    <link href="css/make-doctors-faces-smart.css" rel="stylesheet">
    
     <!-- Google fonts -->
 
@@ -51,7 +54,7 @@
     <!-- END PRELOADER -->
 
     <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-heartbeat"></i></a>
+    <a class="scrollToTop"><i class="fa fa-heartbeat"></i></a>
     <!-- END SCROLL TOP BUTTON -->
 
     <!--=========== BEGIN HEADER SECTION ================-->
@@ -105,9 +108,15 @@
       <div class="top-slider">
         <!-- Start First slide -->
         <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="/img/new/gal1.jpg" alt="">
-          </div>
+          <div
+          class="slider-img"
+          style="
+            background-image: url('/img/new/gal1.jpg');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+          "
+          ></div>
           <div class="slider-text">
             <h2 style="color: #10504f;">Имплант С</h2>
             <p style="color: #10504f;">Профессиональная гигиена полости рта - 1800 руб. Пн, Сб, утро</p>
@@ -117,9 +126,15 @@
 
        <!-- Start Third slide -->
         <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="/img/IMG_3364.JPG" alt="">
-          </div>
+          <div
+            class="slider-img"
+            style="
+              background-image: url('/img/IMG_3364.JPG');
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: cover;
+            "
+          ></div>
           <div class="slider-text">
             <h2 style="color: #10504f;">Имплант С</h2>
             <p style="color: #10504f;">Дисконтная система - дисконтная карта, <br>дающая право на скидку 10%, выдается<br>постоянным пациентам клиники.<br>Скидки не суммируются с акциями. </p>
@@ -129,9 +144,15 @@
 
         <!-- Start 2nd slide -->
         <div class="top-slide-inner">
-          <div class="slider-img" style="top: 0px; padding-top: 70px;"  >
-            <img src="/images/new/24_ счастливая семья1.jpg" alt="">
-          </div>
+          <div
+            class="slider-img"
+            style="
+              background-image: url('/images/new/24_ счастливая семья1.jpg');
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: cover;
+             "
+           ></div>
           <div class="slider-text">
             <h2 style="color: #10504f;">Имплант С</h2>
             <p style="color: #10504f;">Лечение кариеса “Под Ключ” - 3500 руб.</p>
@@ -141,9 +162,15 @@
 
         <!-- Start Third slide -->
         <div class="top-slide-inner">
-          <div class="slider-img">
-            <img src="/img/new/gal2.jpg" alt="">
-          </div>
+          <div
+            class="slider-img"
+            style="
+              background-image: url('/img/new/gal2.jpg');
+              background-repeat: no-repeat;
+              background-position: 50% 50%;
+              background-size: cover;
+            "
+          ></div>
           <div class="slider-text" style="right: 5px; text-align: right; padding-top: 70px;">
             <h2 style="color: #10504f;">Имплант С</h2>
             <p style="color: #10504f;  max-width: 100%;">Скидка 10% пенсионерам на съемное<br>протезирование</p>
@@ -338,7 +365,7 @@
                   <div class="counter-no counter">
                     450
                   </div>
-                  <div class="counter-label">довольных пациента</div>
+                  <div class="counter-label">довольных пациентов</div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6">
@@ -389,7 +416,7 @@
                     <div class="single-doctor">
                       <a class="tdoctor" href="/personal.html#doctor1" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
-                          <img src="/img/new/semenova.jpg">
+                          <img src="/img/new/semenova.jpg" class="personal-slider-image">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
                           <figcaption>
                             <h2>Семенова Наталья Павловна</h2> 
@@ -402,7 +429,7 @@
 
                   <li>
                     <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html#doctor3" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#doctor2" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/melikova.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -418,7 +445,7 @@
                   <li>
                     <div class="single-doctor">
                       <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html#doctor2" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#doctor3" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/sandro.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -437,7 +464,7 @@
                   <li>
                     <div class="single-doctor">
                       <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#doctor4" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/kasumova.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -454,7 +481,7 @@
                   <li>
                     <div class="single-doctor">
                       <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html#doctor3" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#doctor5" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/skobel.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -472,7 +499,7 @@
                   <li>
                     <div class="single-doctor">
                       <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#assistents" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/angelina.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -491,7 +518,7 @@
                   <li>
                     <div class="single-doctor">
                       <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#assistent" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/irina.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -509,7 +536,7 @@
                   <li>
                     <div class="single-doctor">
                       <div class="single-doctor">
-                      <a class="tdoctor" href="/personal.html" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                      <a class="tdoctor" href="/personal.html#admin" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
                         <figure>
                           <img src="/img/new/admin.jpg">
                           <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
@@ -550,7 +577,9 @@
                   <li>
                     <div class="single-testimonial">
                       <div class="testimonial-cotent">
-                        <p class="testimonial-parg">Хочу выразить благодарность Наталье Павловне Семеновой – это врач высшей квалификации, прекрасный доктор и отзывчивый человек! Спасибо большое за вашу работу! Всех Вам благ!</p>
+                        <p class="testimonial-parg">
+                          Хочу выразить благодарность Наталье Павловне Семеновой – это врач высшей квалификации, прекрасный доктор и отзывчивый человек! Спасибо большое за вашу работу! Всех Вам благ!
+                        </p>
                         <p>Арина  Андреевна Топилина 10.07.2017</p>
                       </div>
                     </div>
@@ -559,9 +588,9 @@
                   <li>
                     <div class="single-testimonial">
                       <div class="testimonial-cotent">
-                        <p class="testimonial-parg">Хочу сказать большое спасибо врачу имплантологу- Торонджадзе Александру Гурамовичу,за внимательное отношение к пациенту и высочайший профессионализм! Желаю Вам успехов в работе!
-
-</p>
+                        <p class="testimonial-parg">
+                          Хочу сказать большое спасибо врачу имплантологу- Торонджадзе Александру Гурамовичу,за внимательное отношение к пациенту и высочайший профессионализм! Желаю Вам успехов в работе!
+                        </p>
                         <p>Владимир Папарин  08.07.2017</p>
                       </div>
                     </div>
@@ -628,11 +657,11 @@
                 <div class="line"></div>
               </div>
               <ul class="footer-service">
-                <li><a href="/features.html"><span class="fa fa-check"></span>Ортодонтия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Терапия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Гигиена, профилактика, отбеливание</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Хирургия</a></li>
-                <li><a href="/features.html"><span class="fa fa-check"></span>Ортопедия</a></li>
+                <li><a href="/features.html#orthodontics"><span class="fa fa-check"></span>Ортодонтия</a></li>
+                <li><a href="/features.html#therapy"><span class="fa fa-check"></span>Терапия</a></li>
+                <li><a href="/features.html#hygiene"><span class="fa fa-check"></span>Гигиена, профилактика, отбеливание</a></li>
+                <li><a href="/features.html#surgery"><span class="fa fa-check"></span>Хирургия</a></li>
+                <li><a href="/features.html#orthopedics"><span class="fa fa-check"></span>Ортопедия</a></li>
               </ul>
               </div>
             </div>
@@ -671,7 +700,7 @@
           <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="footer-copyright">
-               <p>&copy; Имплант-С 2017</p>
+               <p>&copy; Имплант-С 2018</p>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -707,6 +736,12 @@
 
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
+    
+    <!-- window scroll throttling -->
+    <script src="js/scroll-throttle.js"></script>
+    
+    <!-- names don't cover doctors' faces -->
+    <script src="js/make-doctors-faces-smart.js"></script>
      
   </body>
 </html>
