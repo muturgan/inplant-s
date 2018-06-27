@@ -210,6 +210,9 @@ img{
 .main-nav{
 	margin : 10px 0px;
 }
+.menu-main-item a::before {
+	z-index: 10;
+}
 .navbar-default .navbar-nav > li > a::before {
 	position: absolute;
 	top: 80%;
