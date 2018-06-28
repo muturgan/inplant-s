@@ -92,7 +92,7 @@ jQuery(function($){
 
 
 	let timer = (counters) => {
-started = true;
+		started = true;
 		
 
 		let i = 0;
@@ -109,12 +109,13 @@ started = true;
     }, 5);
 	}
 
+	timer(counters);
+
 	window.addEventListener('scroll', () => {
 		let startTimer = counters.some(counter => {
 			return ((counter.getBoundingClientRect().top < screen.height) && !started)
 		});
-		console.log(startTimer);
-		if(startTimer) {console.log('started!');timer(counters);}
+		//if(startTimer) {timer(counters);}
 		
 
 //		for (let counter of counters) {
