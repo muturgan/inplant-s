@@ -2733,16 +2733,28 @@ a.gallery-iteam:hover .image-effect::before {
 	width: 100%;
 }
 
-p a[data-phone^="phone"] {
-	margin-right: 7px;
+a[data-phone^="phone"] {
+	margin-right: 10px;
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 }
-p a[data-phone^="phone"]:hover {
+a[data-phone^="phone"]:hover {
 	color: white;
 }
-p a[data-phone^="phone"]:visited {
+a[data-phone^="phone"]:visited {
 	color: white;
+}
+
+address a[data-phone^="phone"] {
+	margin-right: 10px;
+	color: #555;
+	font-size: 14px;
+}
+address a[data-phone^="phone"]:hover {
+	color: #555;
+}
+address a[data-phone^="phone"]:visited {
+	color: #555;
 }
 
 /*======================///////////////
