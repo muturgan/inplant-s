@@ -1,6 +1,6 @@
 {
   "name": "inplant-s",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "scripts": {
     "start": "node server/server.js"

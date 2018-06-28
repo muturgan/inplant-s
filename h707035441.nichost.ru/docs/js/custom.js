@@ -85,11 +85,29 @@ jQuery(function($){
 	/*  5. Counter
 	/* ----------------------------------------------------------- */ 
 
-	  $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+	let counters = document.body.querySelectorAll('.counter')
 
+	let timer = (counter, value) => {
+		counter.classList.add('started');
+
+		let i = 0;
+		let timer = setInterval(() => {
+      if (i <= value) {
+        counter.textContent = i;
+      } else {
+        clearInterval(timer);
+      }
+      i+= 2;
+    }, 4);
+	}
+
+	window.addEventListener('scroll', () => {
+		for (let counter of counters) {
+			if ((counter.getBoundingClientRect().top < screen.height) && (!counter.classList.contains('started'))) {
+				timer(counter, +counter.textContent);
+			}
+		}
+	})
 
 	/* ----------------------------------------------------------- */
 	/*  6. DOCTORS TEAM SLIDER
