@@ -85,28 +85,46 @@ jQuery(function($){
 	/*  5. Counter
 	/* ----------------------------------------------------------- */ 
 
-	let counters = document.body.querySelectorAll('.counter')
+	let counters = [].slice.call(document.body.querySelectorAll('.counter'), 0);
+	console.log(counters);
 
-	let timer = (counter, value) => {
-		counter.classList.add('started');
+	let started = false;
+
+
+	let timer = (counters) => {
+started = true;
+		
 
 		let i = 0;
 		let timer = setInterval(() => {
-      if (i <= value) {
-        counter.textContent = i;
+      if (i <= 1000) {
+				for (let counter of counters) {
+					counter.textContent = i;
+				}
+        
       } else {
         clearInterval(timer);
       }
       i+= 2;
-    }, 4);
+    }, 5);
 	}
 
 	window.addEventListener('scroll', () => {
-		for (let counter of counters) {
-			if ((counter.getBoundingClientRect().top < screen.height) && (!counter.classList.contains('started'))) {
-				timer(counter, +counter.textContent);
-			}
-		}
+		let startTimer = counters.some(counter => {
+			return ((counter.getBoundingClientRect().top < screen.height) && !started)
+		});
+		console.log(startTimer);
+		if(startTimer) {console.log('started!');timer(counters);}
+		
+
+//		for (let counter of counters) {
+	//		if (
+//				(counter.getBoundingClientRect().top < screen.height) &&
+//			 	(!counter.classList.contains('started'))
+//			) {
+//				timer(counter, +counter.textContent);
+//			}
+//		}
 	})
 
 	/* ----------------------------------------------------------- */
