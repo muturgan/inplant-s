@@ -17,9 +17,8 @@
 	8. PRELOADER
 	9. SCROLL TOP BUTTON
 	10. ACCORDION
-  11. ------
   12. fix horizontal orientation of mobile devices
-  13. make phones clickable
+	13. make phones clickable
 	
 **/
 
@@ -54,7 +53,7 @@ jQuery(function($){
     });
     
 
-    /* ----------------------------------------------------------- */
+  /* ----------------------------------------------------------- */
 	/*  3. Top Slider
 	/* ----------------------------------------------------------- */     
 	     $('.top-slider').slick({
@@ -193,35 +192,7 @@ jQuery(function($){
 	$('#accordion .panel-collapse').on('hidden.bs.collapse', function () {
 	$(this).prev().find(".fa").removeClass("fa-minus").addClass("fa-plus");
 	});
-  
-  
-  /* ----------------------------------------------------------- */
-	/*  11. Delete header nav menu flicker
-	/* ----------------------------------------------------------- */  
 
-/* 	let navbar = document.body.querySelector('#navbar');
-  let aboutClinicHead = document.body.querySelector('#about-clinic-head');
-  let aboutClinicList = document.body.querySelector('#about-clinic-list');
-  
-  let tab = new KeyboardEvent('keydown', {keyCode: 9});
-  
-  aboutClinicHead.addEventListener('mouseleave', (event) => {
-    if (event.relatedTarget !== aboutClinicList) {
-      setTimeout(() => {
-        document.body.dispatchEvent(tab);
-        console.log('nav leave')
-      }, 50);
-    }
-  });
-  
-  aboutClinicList.addEventListener('mouseleave', (event) => {
-    if (event.relatedTarget !== aboutClinicHead) {
-      setTimeout(() => {
-        document.body.dispatchEvent(tab);
-        console.log('list leave')
-      }, 50);
-    }
-  }); */
   
   /* ----------------------------------------------------------- */
 	/*  12. fix horizontal orientation of mobile devices
@@ -247,6 +218,6 @@ jQuery(function($){
 			phone.setAttribute('href', 'tel:+78126181881');
 		}
     
-  }
+	}
 	
 });

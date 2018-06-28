@@ -231,7 +231,6 @@ img{
 	pointer-events: none;
 }
 .navbar-default .navbar-nav > li > a:hover::before,
-.navbar-default .navbar-nav > li > a:focus::before,
 .navbar-default .navbar-nav > .active > a::before {
 	color: #fff;
 	text-shadow: 10px 0 #fff, -10px 0 #fff;
@@ -2757,6 +2756,9 @@ address a[data-phone^="phone"]:visited {
 	color: #555;
 }
 
+
+
+
 /*======================///////////////
 			start responsive style
 =====================///////////////////////*/
@@ -2869,27 +2871,6 @@ address a[data-phone^="phone"]:visited {
 .nav-tabs > li > a {font-size: 12px;padding: 10px;} 
 .slider-text h2 {font-size: 30px;line-height: 34px;}
 .slider-text p {font-size: 18px;}
-
-/* .blockquote1 {
-  
-}
-
-.blockquote2 {
-  height: 150px;
-}
-
-.blockquote3 {
-  height: 220px;
-}
-
-.blockquote4 {
-  
-}
-
-.blockquote5 {
-  height: 255px;
-  margin-bottom: 0;
-} */
 }
 
 
@@ -2937,27 +2918,6 @@ address a[data-phone^="phone"]:visited {
 #respond input[type="text"], #respond input[type="email"], #respond input[type="url"] {
   width: 100%;
 }
-
-/* .blockquote1 {
-  height: 140px;
-}
-
-.blockquote2 {
-  height: 180px;
-}
-
-.blockquote3 {
-  
-}
-
-.blockquote4 {
-  height: 150px;
-}
-
-.blockquote5 {
-  height: 290px;
-  margin-bottom: 0;
-} */
 }
 
 .scrollToTop .fa-heartbeat:before, .navbar-brand .fa-heartbeat:before {
