@@ -227,7 +227,7 @@ jQuery(function($){
 	/*  12. fix horizontal orientation of mobile devices
 	/* ----------------------------------------------------------- */  
 
-	if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i)) {
+	if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i))) {
 
 		if (screen.width > screen.height) {
 			for ( let li of document.body.querySelectorAll('#navbar li') ) {
