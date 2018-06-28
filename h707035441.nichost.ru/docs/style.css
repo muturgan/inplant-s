@@ -2733,6 +2733,18 @@ a.gallery-iteam:hover .image-effect::before {
 	width: 100%;
 }
 
+p a[data-phone^="phone"] {
+	margin-right: 7px;
+	color: white;
+	font-size: 18px;
+}
+p a[data-phone^="phone"]:hover {
+	color: white;
+}
+p a[data-phone^="phone"]:visited {
+	color: white;
+}
+
 /*======================///////////////
 			start responsive style
 =====================///////////////////////*/
