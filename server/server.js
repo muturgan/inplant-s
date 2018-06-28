@@ -7,9 +7,8 @@ const app = express()
   .get('/', (req, res) => {res.sendFile( path.join(__dirname, '/../h707035441.nichost.ru/docs/index.html') )});
 
 
-const http = require('http').Server(app);
 const PORT = process.env.PORT || 3333;
 
-http.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server listening on ${ PORT }`);
 });
