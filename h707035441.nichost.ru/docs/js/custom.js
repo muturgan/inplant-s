@@ -16,7 +16,10 @@
 	7. TESTIMONIAL SLIDER(SLICK SLIDER)
 	8. PRELOADER
 	9. SCROLL TOP BUTTON
-	10. ACCORDION	 	
+	10. ACCORDION
+  11. ------
+  12. fix horizontal orientation of mobile devices
+  13. make phones clickable
 	
 **/
 
@@ -224,14 +227,26 @@ jQuery(function($){
 	/*  12. fix horizontal orientation of mobile devices
 	/* ----------------------------------------------------------- */  
 
-	if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i))
-                                && (screen.width > screen.height)) {
-    let lis = document.body.querySelectorAll('#navbar li');
-    for (let li of lis) {
-      li.style.height = '45px';
-    }
+	if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i)) {
+
+		if (screen.width > screen.height) {
+			for ( let li of document.body.querySelectorAll('#navbar li') ) {
+				li.style.height = '45px';
+			}
+		}
+    
+    /* ----------------------------------------------------------- */
+    /*  13. make phones clickable
+    /* ----------------------------------------------------------- */ 
+    
+		for (let phone of document.body.querySelectorAll('[data-phone="phone-one"]')) {
+			phone.setAttribute('href', 'tel:+79215747443');
+		}
+
+		for (let phone of document.body.querySelectorAll('[data-phone="phone-two"]')) {
+			phone.setAttribute('href', 'tel:+78126181881');
+		}
+    
   }
-
-
 	
 });
