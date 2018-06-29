@@ -258,7 +258,10 @@
                                     let a = document.createElement('a');
                                     a.setAttribute('download', '');
                                     a.setAttribute('href', path);
-                                    downloadLink.addEventListener('focus', (event) => {
+                                    downloadLink.addEventListener('click', (event) => {
+                                      a.click();
+                                    });
+                                    downloadLink.addEventListener('touchend', (event) => {
                                       a.click();
                                     });
                                   }, 1)"

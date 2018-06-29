@@ -313,6 +313,10 @@ img{
 	font-size: 30px;
 }
 
+.navbar-brand span{
+	z-index: 150;
+}
+
 /*--------------------*/
 /* HOME SLIDER */
 /*--------------------*/
