@@ -315,6 +315,7 @@ img{
 
 .navbar-brand span{
 	z-index: 150;
+  overflow-x: visible !important;;
 }
 
 /*--------------------*/
