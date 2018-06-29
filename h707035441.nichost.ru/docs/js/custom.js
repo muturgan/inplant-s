@@ -97,9 +97,9 @@ jQuery(function($){
 	/*  5. Counter
 	/* ----------------------------------------------------------- */ 
 
-	let counters = document.body.querySelectorAll('.counter');
-
-	let timer = (counter, value) => {
+		let counters = document.body.querySelectorAll('.counter');
+		
+		let timer = (counter, value) => {
 		counter.classList.add('started');
 
 		let i = 0;
@@ -122,13 +122,25 @@ jQuery(function($){
     }, 4);
 	}
 
-	window.addEventListener('scroll', () => {
-		for (let counter of counters) {
-			if ((counter.getBoundingClientRect().top < screen.height) && (!counter.classList.contains('started'))) {
+	window.onload = () => {
+		if (counters[0].getBoundingClientRect().top < screen.height) {
+			for (let counter of counters) {
 				timer(counter, +counter.textContent);
 			}
+		} else {
+			window.addEventListener('scroll', () => {
+				for (let counter of counters) {
+					if (
+						counter.getBoundingClientRect().top < screen.height &&
+						!counter.classList.contains('started')
+					) {
+						timer(counter, +counter.textContent);
+					}
+				}
+			})
 		}
-	})
+	}
+
 
 	/* ----------------------------------------------------------- */
 	/*  6. DOCTORS TEAM SLIDER
