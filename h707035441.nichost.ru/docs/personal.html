@@ -28,8 +28,7 @@
     <!-- Default Theme css file -->
     <!-- Photo Swipe Image Gallery -->     
     <link rel='stylesheet prefetch' href='css/photoswipe.css'>
-    <link rel='stylesheet prefetch' href='css/default-skin.css'>  
-    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">    
+    <link rel='stylesheet prefetch' href='css/default-skin/default-skin.css'>   
     <!-- Slick slider css file -->
     <link href="css/slick.css" rel="stylesheet"> 
 
@@ -248,26 +247,25 @@
 
                         <button class="pswp__button pswp__button--close" title="Закрыть (Esc)"></button>
 
-                        <button
-                          class="pswp__button pswp__button--share"
-                          title="Поделиться"
-                          onclick="setTimeout(() => {
-                                    let downloadLink = document.body.querySelector('[download]');
-                                    downloadLink.style.zIndex = 10;
-                                    let path = downloadLink.getAttribute('href');
-                                    let a = document.createElement('a');
-                                    a.setAttribute('download', '');
-                                    a.setAttribute('href', path);
-                                    downloadLink.addEventListener('click', (event) => {
-                                      a.click();
-                                    });
-                                    downloadLink.addEventListener('touchend', (event) => {
-                                      a.click();
-                                    });
-                                  }, 1)"
+                        <button class="pswp__button pswp__button--share" title="Поделиться"
+                        onclick="setTimeout(() => {
+                          let downloadLink = document.body.querySelector('[download]');
+                          downloadLink.style.zIndex = 10;
+                          let path = downloadLink.getAttribute('href');
+                          let a = document.createElement('a');
+                          a.setAttribute('download', '');
+                          a.setAttribute('href', path);
+                          downloadLink.addEventListener('click', (event) => {
+                            a.click();
+                          });
+                          downloadLink.addEventListener('touchenter', (event) => {
+                            alert('touched!');
+                            a.click();
+                          });
+                        }, 1)"
                         ></button>
 
-                        <button class="pswp__button pswp__button--fs" title="Развернуть на весь экран"></button>
+                        <button class="pswp__button pswp__button--fs" title="На весь экран"></button>
 
                         <button class="pswp__button pswp__button--zoom" title="Масштабировать"></button>
 
