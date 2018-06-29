@@ -105,7 +105,7 @@ jQuery(function($){
 		let i = 0;
 		let speed = 3;
 		if (isMobile) {
-			speed = 7;
+			speed = 11;
 		}
 		if (value > 600) {
 			speed *= 2;
