@@ -138,7 +138,7 @@
     </section>
 
 <section id="meetDoctors">
-      <div class="container">
+<div class="container">
 <div class="blog-content blog-details">
 
 
@@ -258,10 +258,7 @@
                                     let a = document.createElement('a');
                                     a.setAttribute('download', '');
                                     a.setAttribute('href', path);
-                                    downloadLink.addEventListener('click', (event) => {
-                                      a.click();
-                                    });
-                                    downloadLink.addEventListener('touchend', (event) => {
+                                    downloadLink.addEventListener('focus', (event) => {
                                       a.click();
                                     });
                                   }, 1)"
@@ -462,7 +459,7 @@
 </div>
 
 <p>Окончила 1 Ленинградский медицинский институт им. Акад. И. П. Павлова</p>
-<p>Для многих является семейным стоматологом, т.к. лечит и взрослых и детей уже в нескольких поколениях. Много времени уделяет повышению квалификации: посещает международные стоматологические <p>конференции, семинары, мастер-классы.</p>
+<p>Для многих является семейным стоматологом, т.к. лечит и взрослых и детей уже в нескольких поколениях. Много времени уделяет повышению квалификации: посещает международные стоматологические конференции, семинары, мастер-классы.</p>
 <p>В 2000 году проходила стажировку в Америке.</p>
 <p>В 2005 году в Израиле.</p>
  
@@ -600,17 +597,9 @@
 
 <br clear="all">
 
-<p>
-
-</p>
-
-
-
-
-
-                              </div>
-    </div>
-  </section>
+</div>
+</div>
+</section>
 
 
   <!--=========== Start Footer SECTION ================-->
@@ -701,9 +690,6 @@
     <!-- slick slider -->
     <script src="js/slick.min.js"></script>    
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-    <!-- Doctors hover effect -->
-    <script src="js/snap.svg-min.js"></script>
-    <script src="js/hovers.js"></script>
     <!-- Photo Swipe Gallery Slider -->
     <script src='js/photoswipe.min.js'></script>
     <script src='js/photoswipe-ui-default.min.js'></script>    
