@@ -7,6 +7,7 @@
 
 	Custom JS
 	
+	0. is mobile cheking
 	1. DROPDOWN MENU
 	2. FIXED TOP MENU BAR
 	3. TOP SLIDER
@@ -25,7 +26,18 @@
 jQuery(function($){
 
 
+	/* ----------------------------------------------------------- */
+  /*  0. is mobile cheking
   /* ----------------------------------------------------------- */
+
+	 let isMobile = false;
+	 
+	 if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i))) {
+		isMobile = true;
+	 }
+	
+	
+	/* ----------------------------------------------------------- */
   /*  1. DROPDOWN MENU
   /* ----------------------------------------------------------- */
 
@@ -85,47 +97,37 @@ jQuery(function($){
 	/*  5. Counter
 	/* ----------------------------------------------------------- */ 
 
-	let counters = [].slice.call(document.body.querySelectorAll('.counter'), 0);
-	console.log(counters);
+	let counters = document.body.querySelectorAll('.counter');
 
-	let started = false;
-
-
-	let timer = (counters) => {
-		started = true;
-		
+	let timer = (counter, value) => {
+		counter.classList.add('started');
 
 		let i = 0;
+		let speed = 3;
+		if (isMobile) {
+			speed = 7;
+		}
+		if (value > 600) {
+			speed *= 2;
+		}
+
 		let timer = setInterval(() => {
-      if (i <= 1000) {
-				for (let counter of counters) {
-					counter.textContent = i;
-				}
-        
+      if (i <= value) {
+        counter.textContent = i;
       } else {
+				counter.textContent = value;
         clearInterval(timer);
       }
-      i+= 2;
-    }, 5);
+      i+= speed;
+    }, 4);
 	}
 
-	timer(counters);
-
 	window.addEventListener('scroll', () => {
-		let startTimer = counters.some(counter => {
-			return ((counter.getBoundingClientRect().top < screen.height) && !started)
-		});
-		//if(startTimer) {timer(counters);}
-		
-
-//		for (let counter of counters) {
-	//		if (
-//				(counter.getBoundingClientRect().top < screen.height) &&
-//			 	(!counter.classList.contains('started'))
-//			) {
-//				timer(counter, +counter.textContent);
-//			}
-//		}
+		for (let counter of counters) {
+			if ((counter.getBoundingClientRect().top < screen.height) && (!counter.classList.contains('started'))) {
+				timer(counter, +counter.textContent);
+			}
+		}
 	})
 
 	/* ----------------------------------------------------------- */
@@ -235,26 +237,25 @@ jQuery(function($){
 	/*  12. fix horizontal orientation of mobile devices
 	/* ----------------------------------------------------------- */  
 
-	if (navigator.userAgent.match((/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i))) {
-
-		if (screen.width > screen.height) {
-			for ( let li of document.body.querySelectorAll('#navbar li') ) {
-				li.style.height = '45px';
-			}
+	if (isMobile && screen.width > screen.height) {
+		for ( let li of document.body.querySelectorAll('#navbar li') ) {
+			li.style.height = '45px';
 		}
-    
-    /* ----------------------------------------------------------- */
-    /*  13. make phones clickable
-    /* ----------------------------------------------------------- */ 
-    
+	}
+
+
+	/* ----------------------------------------------------------- */
+  /*  13. make phones clickable
+  /* ----------------------------------------------------------- */ 
+			
+	if (isMobile) {
 		for (let phone of document.body.querySelectorAll('[data-phone="phone-one"]')) {
 			phone.setAttribute('href', 'tel:+79215747443');
 		}
 
 		for (let phone of document.body.querySelectorAll('[data-phone="phone-two"]')) {
 			phone.setAttribute('href', 'tel:+78126181881');
-		}
-    
+		} 
 	}
 	
 });
