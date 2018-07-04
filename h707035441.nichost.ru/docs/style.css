@@ -318,6 +318,7 @@ img{
 
 .navbar-brand span{
 	z-index: 150;
+	color: white;
   overflow-x: visible !important;;
 }
 
