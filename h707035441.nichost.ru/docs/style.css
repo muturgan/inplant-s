@@ -618,11 +618,14 @@ img{
 	float: right;
 }
 
+/*
+move to index.html
 .top-slide-inner .slider-img {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
   background-size: cover;
 }
+*/
 
 .whychoose-singleslide div {
 	background-repeat: no-repeat;
@@ -3037,18 +3040,3 @@ body {
 	-webkit-filter: brightness(65%);
 	filter: brightness(65%);
 }
-/*
-.slider-img-two {
-	-webkit-filter: brightness(50%);
-	filter: brightness(50%);
-}
-
-.slider-img-three {
-	-webkit-filter: brightness(50%);
-	filter: brightness(50%);
-}
-
-.slider-img-four {
-	-webkit-filter: brightness(50%);
-	filter: brightness(50%);
-}*/
