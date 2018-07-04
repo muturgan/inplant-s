@@ -2965,13 +2965,6 @@ address a[data-phone^="phone"]:visited {
     background-position: -1px 1px;
 }
 
-.whychoose-singleslide img {
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: cover;
-	border: none;
-}
-
 html {
 	width: 100%;
 	padding: 0;
