@@ -3000,6 +3000,29 @@ body {
 	flex-shrink: 0;
 }
 
-.top-slide-inner .slider-text .main-slider-text {
-	text-shadow: 0.5px 0 0 Moccasin, 0 0.5px 0 Moccasin, -0.5px 0 0 Moccasin, 0 -0.5px 0 Moccasin;	
+.slider-text::before {
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: Teal;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	opacity: 0.5;
+}
+
+.top-slide-inner .slider-text h2 {
+	z-index: 100;
+	color: white;
+}
+
+.top-slide-inner .slider-text p {
+	z-index: 10;
+	color: white;
+}
+
+.top-slide-inner .slider-text .main-slider-header {
+	font-size: 55px;
 }
