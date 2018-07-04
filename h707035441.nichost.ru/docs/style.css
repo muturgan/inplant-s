@@ -3031,3 +3031,11 @@ body {
 .media-icon:hover {
 	cursor: pointer;
 }
+
+.navbar-header {
+	z-index: -1;
+}
+
+.flex-wrapper-two {
+	z-index: -1;
+}
