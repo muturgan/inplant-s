@@ -2956,8 +2956,9 @@ address a[data-phone^="phone"]:visited {
 }
 
 img {
-	width: 100%;
-	height: auto;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+  background-size: cover;
 }
 
 html {
