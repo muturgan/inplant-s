@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121643844-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121643844-1');
+</script>
+  <!-- Google Analytics -->
+  
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter49443997 = new Ya.Metrika2({
+                  id:49443997,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49443997" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
@@ -27,9 +68,6 @@
 
     <!-- Main structure css file -->
     <link href="style.css" rel="stylesheet">
-    
-    <!-- names don't cover doctors' faces -->
-    <link href="css/make-doctors-faces-smart.css" rel="stylesheet">
    
     <!-- Google fonts -->
 
@@ -73,14 +111,14 @@
               <!-- LOGO -->              
               <!-- TEXT BASED LOGO -->
               <div class="flex-wrapper flex-wrapper-two">
-                <a class="navbar-brand" href="index.html"><i class="fa fa-heartbeat"></i><span>Имплант С</span></a>              
+                <a class="navbar-brand" href="/"><i class="fa fa-heartbeat"></i><span>Имплант С</span></a>              
               </div>
               <!-- IMG BASED LOGO  -->
-              <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>   -->                    
+              <!--  <a class="navbar-brand" href="/"><img src="images/logo.png" alt="logo"></a>   -->                    
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active menu-main-item"><a href="index.html" tabindex="1">Главная</a></li>
+                <li class="active menu-main-item"><a href="/" tabindex="1">Главная</a></li>
                 <li id="about-clinic-head" class="dropdown open">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">О клинике <span class="fa fa-angle-down"></span></a>
                   <ul id="about-clinic-list" class="dropdown-menu" role="menu" style="display: none;">
@@ -111,12 +149,7 @@
         <div class="top-slide-inner">
           <div
           class="slider-img"
-          style="
-            background-image: url('/img/new/gal1.jpg');
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: cover;
-          "
+          style="background-image: url('/img/new/gal1.jpg');"
           ></div>
           <div class="slider-text">
             <h2 style="color: #10504f;">Имплант С</h2>
@@ -129,12 +162,7 @@
         <div class="top-slide-inner">
           <div
             class="slider-img"
-            style="
-              background-image: url('/img/IMG_3364.JPG');
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              background-size: cover;
-            "
+            style="background-image: url('/img/IMG_3364.JPG');"
           ></div>
           <div class="slider-text">
             <h2 style="color: #10504f;">Имплант С</h2>
@@ -147,12 +175,7 @@
         <div class="top-slide-inner">
           <div
             class="slider-img"
-            style="
-              background-image: url('/images/new/24_ счастливая семья1.jpg');
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              background-size: cover;
-             "
+            style="background-image: url('/images/new/24_ счастливая семья1.jpg');"
            ></div>
           <div class="slider-text">
             <h2 style="color: #10504f;">Имплант С</h2>
@@ -165,12 +188,7 @@
         <div class="top-slide-inner">
           <div
             class="slider-img"
-            style="
-              background-image: url('/img/new/gal2.jpg');
-              background-repeat: no-repeat;
-              background-position: 50% 50%;
-              background-size: cover;
-            "
+            style="background-image: url('/img/new/gal2.jpg');"
           ></div>
           <div class="slider-text" style="right: 5px; text-align: right; padding-top: 70px;">
             <h2 style="color: #10504f;">Имплант С</h2>
@@ -185,12 +203,13 @@
       </div><!-- /top-slider -->
     </section>
     <!--=========== END SLIDER SECTION ================-->
+    
 
     <!--=========== BEGIN Top Feature SECTION ================-->
     <section id="topFeature">
       <div class="row">
         <!-- Start Single Top Feature -->
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4" id="appointment">
           <div class="row">
             <div class="single-top-feature">
               <span class="fa fa-flask"></span>
@@ -337,7 +356,7 @@
                 <div class="whyChoose-right">
                   <div class="media">
                     <div class="media-left">
-                      <a href="#" class="media-icon">
+                      <a class="media-icon">
                         <span class="fa fa-hospital-o"></span>
                       </a>
                     </div>
@@ -423,8 +442,8 @@
                         <figure>
                           <img src="/img/new/semenova.jpg" class="personal-slider-image">
                           <figcaption>
-                            <h2>Семенова Наталья Павловна</h2> 
-                            <p>Стоматолог</p>
+                            <h2 class="make-doctors-faces-smart">Семенова Наталья Павловна</h2> 
+                            <p class="make-doctors-faces-smart">Стоматолог</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -438,8 +457,8 @@
                           <img src="/img/new/melikova.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Меликова Анжела Георгиевна</h2> 
-                            <p>Терапевт, хирург</p>
+                            <h2 class="make-doctors-faces-smart">Меликова Анжела Георгиевна</h2> 
+                            <p class="make-doctors-faces-smart">Терапевт, хирург</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -454,8 +473,8 @@
                           <img src="/img/new/sandro.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Торонджадзе Александр Гурамович</h2>
-                            <p>Стоматолог. Ортопед</p>
+                            <h2 class="make-doctors-faces-smart">Торонджадзе Александр Гурамович</h2>
+                            <p class="make-doctors-faces-smart">Стоматолог-ортопед</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -473,8 +492,8 @@
                           <img src="/img/new/kasumova.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Касумова Карина</h2>
-                            <p>Ортодонт</p>
+                            <h2 class="make-doctors-faces-smart">Касумова Карина</h2>
+                            <p class="make-doctors-faces-smart">Ортодонт</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -490,8 +509,8 @@
                           <img src="/img/new/skobel.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Скобельцева Екатерина Юрьевна</h2>
-                            <p>Стоматолог</p>
+                            <h2 class="make-doctors-faces-smart">Скобельцева Екатерина Юрьевна</h2>
+                            <p class="make-doctors-faces-smart">Стоматолог</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -508,8 +527,8 @@
                           <img src="/img/new/angelina.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Ангелина</h2>
-                            <p>Ассистет стоматолога</p>
+                            <h2 class="make-doctors-faces-smart">Ангелина</h2>
+                            <p class="make-doctors-faces-smart">Ассистет стоматолога</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -527,8 +546,8 @@
                           <img src="/img/new/irina.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Ирина</h2>
-                            <p>Ассистет стоматолога</p>
+                            <h2 class="make-doctors-faces-smart">Ирина</h2>
+                            <p class="make-doctors-faces-smart">Ассистет стоматолога</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -545,8 +564,8 @@
                           <img src="/img/new/admin.jpg">
                           <!-- <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg> -->
                           <figcaption>
-                            <h2>Ольга Николаевна</h2>
-                            <p>Администратор</p>
+                            <h2 class="make-doctors-faces-smart">Ольга Николаевна</h2>
+                            <p class="make-doctors-faces-smart">Администратор</p>
                           </figcaption>
                         </figure>
                       </a>
@@ -741,11 +760,11 @@
     <!-- window scroll throttling -->
     <script src="js/scroll-throttle.js"></script>
     
-    <!-- names don't cover doctors' faces -->
-    <script src="js/make-doctors-faces-smart.js"></script>
-    
     <!-- counter -->
     <script src="js/counter.js"></script>
+
+    <!-- scroll-to-appointment -->
+    <script src="js/scroll-to-appointment.js"></script>
      
   </body>
 </html>

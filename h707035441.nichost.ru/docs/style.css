@@ -613,6 +613,12 @@ img{
 	float: right;
 }
 
+.top-slide-inner .slider-img {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+  background-size: cover;
+}
+
 /*--------------------*/
 /* SERVICE */
 /*--------------------*/
@@ -1051,14 +1057,14 @@ img{
     -o-transition: opacity 0.3s, -o-transform 0.3s;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 }
-.doctors-nav figcaption h2,
+/* .doctors-nav figcaption h2,
 .doctors-nav figcaption p {
 	-moz-transform: translatey(50px);
     -ms-transform: translatey(50px);
     -o-transform: translatey(50px);
     -webkit-transform: translatey(50px);
     transform: translatey(50px)
-}
+} */
 .doctors-nav figure button {
 	position: absolute;
 	padding: 4px 20px;
@@ -1094,19 +1100,38 @@ img{
 .doctors-nav a:hover figure img {
 	opacity: 1;
 }
+
+/* was:
 .doctors-nav a:hover figcaption h2,
-.doctors-nav a:hover figcaption p {
-	 -moz-transform: translatey(0);
+.doctors-nav a:hover figcaption p */
+.doctors-nav a figcaption h2,
+.doctors-nav a figcaption p {
+  position: relative;
+  top: 240px;
+  background-color: #fff;
+	margin: 0px;
+	padding: 0px;
+/* 	 -moz-transform: translatey(0);
     -ms-transform: translatey(0);
     -o-transform: translatey(0);
     -webkit-transform: translatey(0);
-    transform: translatey(0)
+    transform: translatey(0) */
 }
-.doctors-nav a:hover figcaption h2{
+.doctors-nav a figcaption h2 {
+	border: 3px solid rgb(204,204,204);
+	border-bottom: none;
+}
+.doctors-nav a figcaption p {
+	border: 3px solid rgb(204,204,204);
+	border-top: none;
+}
+
+
+/* .doctors-nav a:hover figcaption h2{
 	background-color: #fff;
 	margin: 0px;
 	padding: 0px;	
-}
+} */
 
 /* .doctors-nav a:hover figcaption p {
 	opacity: 0;
@@ -2924,4 +2949,14 @@ address a[data-phone^="phone"]:visited {
     height: 32px;
     background-size: 32px 32px;
     background-position: -1px 1px;
+}
+
+.whychoose-singleslide img {
+	width: 100%;
+	height: auto;
+}
+
+body {
+	width: 100vw;
+	margin: 0;
 }
