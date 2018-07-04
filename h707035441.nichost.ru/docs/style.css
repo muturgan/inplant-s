@@ -2866,29 +2866,29 @@ address a[data-phone^="phone"]:visited {
 .slider-text h2 {font-size: 35px;line-height: 40px;}
 .slider-text p {font-size: 20px;}
 
-.navbar-header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: baseline;
-  flex-wrap: nowrap;
-}
-.flex-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.flex-wrapper-one {
-  flex-basis: 20%;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-.flex-wrapper-two {
-  flex-basis: 80%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
+	.navbar-header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: baseline;
+		flex-wrap: nowrap;
+	}
+	.flex-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.flex-wrapper-one {
+		flex-basis: 20%;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.flex-wrapper-two {
+		flex-basis: 80%;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
 }
 
 @media(max-width:480px ){	
@@ -2976,4 +2976,23 @@ html {
 body {
 	width: 100%;
 	margin: 0;
+}
+
+.media-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.whychoose-flexitem-one {
+	flex-basis: 20%;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.whychoose-flexitem-two {
+	flex-basis: 80%;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
