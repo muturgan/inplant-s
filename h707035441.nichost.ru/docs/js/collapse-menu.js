@@ -14,6 +14,5 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows
     }
   }
 
-  document.body.addEventListener('click', handler);
-  //document.body.addEventListener('touch', handler);
+  document.body.addEventListener('touchstart', handler);
 }
