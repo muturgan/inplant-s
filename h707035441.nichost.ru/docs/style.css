@@ -619,6 +619,12 @@ img{
   background-size: cover;
 }
 
+.whychoose-singleslide div {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+  background-size: cover;
+}
+
 /*--------------------*/
 /* SERVICE */
 /*--------------------*/
@@ -2955,10 +2961,11 @@ address a[data-phone^="phone"]:visited {
     background-position: -1px 1px;
 }
 
-img {
+.whychoose-singleslide img {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-  background-size: cover;
+	background-size: cover;
+	border: none;
 }
 
 html {
