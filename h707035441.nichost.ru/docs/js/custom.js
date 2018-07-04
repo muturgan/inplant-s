@@ -67,15 +67,21 @@ jQuery(function($){
 
   /* ----------------------------------------------------------- */
 	/*  3. Top Slider
-	/* ----------------------------------------------------------- */     
-	     $('.top-slider').slick({
-		  dots: false,
-		  arrows:true,
-		  autoplay: true,
-		  speed: 500,
-		  fade: true,
-		  cssEase: 'linear'
-		});
+	/* ----------------------------------------------------------- */   
+	
+	let arrows = true;
+	if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i)) {
+		arrows = false;
+	}
+
+	$('.top-slider').slick({
+	  dots: false,
+	  arrows: arrows,
+	  autoplay: true,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
+	});
   
   /* ----------------------------------------------------------- */
 	/*  4. Why Choose Slider(Slick Slider)
