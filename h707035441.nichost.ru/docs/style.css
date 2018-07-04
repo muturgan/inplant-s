@@ -2960,7 +2960,12 @@ img {
 	height: auto;
 }
 
+html {
+	width: 100%;
+	padding: 0;
+}
+
 body {
-	width: 100vw;
+	width: 100%;
 	margin: 0;
 }
