@@ -1058,8 +1058,7 @@ img{
 
 .doctors-nav figcaption p {
 	padding: 0 20px;
-  color: #aaa;
-  text-shadow: 0 0 1px black;
+  color: darckgrey;
   font-size: 17px;
   font-weight: 300;
   transition: opacity 0.3s, transform 0.3s;
