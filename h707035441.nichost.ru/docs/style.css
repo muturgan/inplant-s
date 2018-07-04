@@ -35,6 +35,10 @@ Tags: light, white,Multi page,Medical,Hospital,Health,custom-colors,Bootstrap,re
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
+:root {
+  --main-color: rgb(17,201,199);
+}
+
 
 @font-face {
 	font-family: Raleway; /* Гарнитура шрифта */
@@ -2995,4 +2999,8 @@ body {
 	flex-basis: 80%;
 	flex-grow: 0;
 	flex-shrink: 0;
+}
+
+.top-slide-inner .slider-text .main-slider-text {
+	text-shadow: 0.5px 0 0 Moccasin, 0 0.5px 0 Moccasin, -0.5px 0 0 Moccasin, 0 -0.5px 0 Moccasin;	
 }
