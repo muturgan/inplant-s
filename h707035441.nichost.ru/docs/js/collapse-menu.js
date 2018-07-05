@@ -5,10 +5,9 @@ if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows
   let menuSpase = document.body.querySelector('.navbar-collapse');
 
   function handler(event) {
-    if (
-      !collapseButton.classList.contains('collapsed')
+    if (!collapseButton.classList.contains('collapsed')
       &&
-      event.target !== menuSpase
+      !event.target.closest( '.navbar-collapse' )
     ) {
       collapseButton.click();
     }
