@@ -1,0 +1,15 @@
+Яндекс
+Имя: Имплант-С
+фамилия: Администратор
+логин: implant-s-metrics (implant-s-metrics@yandex.ru)
+пароль: implant-s-metrics4
+контрольный вопрос: имя любимого киногероя
+ответ: Штирлиц
+
+Гугл
+Имя: Implant
+фамилия: Admin
+логин: implant.analytics@gmail.com
+пароль: implant.analytics4
+день рождения: 13 февраля 1973
+пол: мужской
