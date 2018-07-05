@@ -1876,10 +1876,7 @@ width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.blog-details img {
-	width: 95vw;
-	height: auto;
-}
+
 .blog-details p {
   font-size: 15px;
   line-height: 28px;
@@ -2805,7 +2802,12 @@ address a[data-phone^="phone"]:visited {
   .navbar-brand {font-size: 20px;width: 258px;}
   .doctors-nav figcaption h2 {font-size: 14px;}
   .doctors-nav figcaption p {font-size: 14px;padding: 0 12px;}
-  .nav-tabs > li > a {padding: 10px 10px;}
+	.nav-tabs > li > a {padding: 10px 10px;}
+	
+	.blog-details img {
+		width: 95vw;
+		height: auto;
+	}
 }
 
 
