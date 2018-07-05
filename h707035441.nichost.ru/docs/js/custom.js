@@ -10,11 +10,11 @@
 	0. is mobile cheking
 	1. DROPDOWN MENU
 	2. FIXED TOP MENU BAR
-	3. TOP SLIDER
-	4. WHY CHOOSE SLIER(SLICK SLIDER)
-	5. COUNTER
-	6. DOCTORS TEAM SLIDER(SLICK SLIDER)
-	7. TESTIMONIAL SLIDER(SLICK SLIDER)
+	3. TOP SLIDER // move to slider-init.js
+	4. WHY CHOOSE SLIER(SLICK SLIDER) // move to slider-init.js
+	5. COUNTER //	replace to counter.js
+	6. DOCTORS TEAM SLIDER(SLICK SLIDER) // move to slider-init.js
+	7. TESTIMONIAL SLIDER(SLICK SLIDER) // move to slider-init.js
 	8. PRELOADER
 	9. SCROLL TOP BUTTON
 	10. ACCORDION
@@ -69,36 +69,13 @@ jQuery(function($){
 	/*  3. Top Slider
 	/* ----------------------------------------------------------- */   
 	
-	let arrows = true;
-	if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i)) {
-		arrows = false;
-	}
-
-	$('.top-slider').slick({
-	  dots: false,
-	  arrows: arrows,
-	  autoplay: true,
-	  speed: 500,
-	  fade: true,
-	  cssEase: 'linear'
-	});
+	 // move to slider-init.js
   
   /* ----------------------------------------------------------- */
 	/*  4. Why Choose Slider(Slick Slider)
 	/* ----------------------------------------------------------- */ 
 
-	$('.whychoose-slider').slick({
-	  dots: false,
-      infinite: true,      
-      speed: 800,
-      arrows:true,      
-      slidesToShow: 1,
-      slide: 'div',
-      autoplay: true,
-      fade: false,
-      autoplaySpeed: 5000,
-      cssEase: 'linear'
-	});
+	 // move to slider-init.js
 
 	/* ----------------------------------------------------------- */
 	/*  5. Counter
@@ -111,57 +88,13 @@ jQuery(function($){
 	/*  6. DOCTORS TEAM SLIDER
 	/* ----------------------------------------------------------- */
 
-		$('.doctors-nav').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slide: 'li',
-		  // autoplay: true,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  ]
-		}); 
+		 // move to slider-init.js
 
 	/* ----------------------------------------------------------- */
 	/*  7. Testimonial Slider 
 	/* ----------------------------------------------------------- */ 
 
-	$('.testimonial-nav').slick({
-	  dots: true,
-      infinite: true,      
-      speed: 200,
-      arrows:false,      
-      slidesToShow: 1,
-      slide: 'li',
-      autoplay: true,
-      fade: true,
-      autoplaySpeed: 5000,
-      cssEase: 'linear',
-	});
+	 // move to slider-init.js
 
 	/* ----------------------------------------------------------- */
 	/*  8. PRELOADER 
