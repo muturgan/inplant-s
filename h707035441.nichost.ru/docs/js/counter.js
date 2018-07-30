@@ -6,11 +6,8 @@
 		counter.classList.add('started');
 
 		let i = 0;
-		let speed = 3;
+		let speed = 7 * Math.round(value/1000);
 		if (navigator.userAgent.match(/iPad|iPhone|iPod|Android|BlackBerry|webOS|Windows Phone/i)) {
-			speed = 11;
-		}
-		if (value > 600) {
 			speed *= 2;
 		}
 
